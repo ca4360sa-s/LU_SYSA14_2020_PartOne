@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74C99849-C2EA-4391-B8A9-153A5073B62C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LU_SYSA14_2020_PartOne</RootNamespace>
+    <AssemblyName>LU_SYSA14_2020_PartOne</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\Controller_PCTwo.cs" />
+    <Compile Include="Models\DAL_PCTwo.cs" />
+    <Compile Include="Models\ModelMethods.cs" />
+    <Compile Include="Models\DAL.cs" />
+    <Compile Include="Models\ModelViews.cs" />
+    <Compile Include="Views\ProgramConstructionTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProgramConstructionTwo.Designer.cs">
+      <DependentUpon>ProgramConstructionTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IntegrationAndConfigurationTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IntegrationAndConfigurationTwo.Designer.cs">
+      <DependentUpon>IntegrationAndConfigurationTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IntegrationAndConfigurationOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IntegrationAndConfigurationOne.Designer.cs">
+      <DependentUpon>IntegrationAndConfigurationOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IntegrationTechnologiesTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IntegrationTechnologiesTwo.Designer.cs">
+      <DependentUpon>IntegrationTechnologiesTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IntegrationTechnologiesOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IntegrationTechnologiesOne.Designer.cs">
+      <DependentUpon>IntegrationTechnologiesOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramConstructionOneSubViews\OrderAndStockSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProgramConstructionOneSubViews\OrderAndStockSystem.Designer.cs">
+      <DependentUpon>OrderAndStockSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramConstructionOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProgramConstructionOne.Designer.cs">
+      <DependentUpon>ProgramConstructionOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\ProgramConstructionTwo.resx">
+      <DependentUpon>ProgramConstructionTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\IntegrationAndConfigurationOne.resx">
+      <DependentUpon>IntegrationAndConfigurationOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\IntegrationAndConfigurationTwo.resx">
+      <DependentUpon>IntegrationAndConfigurationTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\IntegrationTechnologiesOne.resx">
+      <DependentUpon>IntegrationTechnologiesOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\IntegrationTechnologiesTwo.resx">
+      <DependentUpon>IntegrationTechnologiesTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProgramConstructionOne.resx">
+      <DependentUpon>ProgramConstructionOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProgramConstructionOneSubViews\OrderAndStockSystem.resx">
+      <DependentUpon>OrderAndStockSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
