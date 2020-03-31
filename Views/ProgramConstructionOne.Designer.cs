@@ -72,13 +72,13 @@
             this.integrationsteknologierToolStripMenuItem,
             this.integrationOchKonfigureringAvERPsystemToolStripMenuItem});
             this.menyToolStripMenuItem.Name = "menyToolStripMenuItem";
-            this.menyToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.menyToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.menyToolStripMenuItem.Text = "Meny";
             // 
             // startmenyToolStripMenuItem
             // 
             this.startmenyToolStripMenuItem.Name = "startmenyToolStripMenuItem";
-            this.startmenyToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
+            this.startmenyToolStripMenuItem.Size = new System.Drawing.Size(385, 26);
             this.startmenyToolStripMenuItem.Text = "Startmeny";
             this.startmenyToolStripMenuItem.Click += new System.EventHandler(this.StartmenyToolStripMenuItem_Click);
             // 
@@ -88,20 +88,20 @@
             this.programkonstruktionUppgift1ToolStripMenuItem,
             this.programkonstruktionUppgift2ToolStripMenuItem});
             this.programkonstruktionToolStripMenuItem.Name = "programkonstruktionToolStripMenuItem";
-            this.programkonstruktionToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
+            this.programkonstruktionToolStripMenuItem.Size = new System.Drawing.Size(385, 26);
             this.programkonstruktionToolStripMenuItem.Text = "Programkonstruktion";
             // 
             // programkonstruktionUppgift1ToolStripMenuItem
             // 
             this.programkonstruktionUppgift1ToolStripMenuItem.Name = "programkonstruktionUppgift1ToolStripMenuItem";
-            this.programkonstruktionUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(289, 26);
+            this.programkonstruktionUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
             this.programkonstruktionUppgift1ToolStripMenuItem.Text = "Programkonstruktion Uppgift 1";
             this.programkonstruktionUppgift1ToolStripMenuItem.Click += new System.EventHandler(this.ProgramkonstruktionUppgift1ToolStripMenuItem_Click);
             // 
             // programkonstruktionUppgift2ToolStripMenuItem
             // 
             this.programkonstruktionUppgift2ToolStripMenuItem.Name = "programkonstruktionUppgift2ToolStripMenuItem";
-            this.programkonstruktionUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(289, 26);
+            this.programkonstruktionUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
             this.programkonstruktionUppgift2ToolStripMenuItem.Text = "Programkonstruktion Uppgift 2";
             this.programkonstruktionUppgift2ToolStripMenuItem.Click += new System.EventHandler(this.ProgramkonstruktionUppgift2ToolStripMenuItem_Click);
             // 
@@ -111,20 +111,20 @@
             this.webServiceUppgift1ToolStripMenuItem,
             this.webServiceUppgift2ToolStripMenuItem});
             this.integrationsteknologierToolStripMenuItem.Name = "integrationsteknologierToolStripMenuItem";
-            this.integrationsteknologierToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
+            this.integrationsteknologierToolStripMenuItem.Size = new System.Drawing.Size(385, 26);
             this.integrationsteknologierToolStripMenuItem.Text = "Integrationsteknologier";
             // 
             // webServiceUppgift1ToolStripMenuItem
             // 
             this.webServiceUppgift1ToolStripMenuItem.Name = "webServiceUppgift1ToolStripMenuItem";
-            this.webServiceUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
+            this.webServiceUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.webServiceUppgift1ToolStripMenuItem.Text = "Web Service Uppgift 1";
             this.webServiceUppgift1ToolStripMenuItem.Click += new System.EventHandler(this.WebServiceUppgift1ToolStripMenuItem_Click);
             // 
             // webServiceUppgift2ToolStripMenuItem
             // 
             this.webServiceUppgift2ToolStripMenuItem.Name = "webServiceUppgift2ToolStripMenuItem";
-            this.webServiceUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
+            this.webServiceUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.webServiceUppgift2ToolStripMenuItem.Text = "Web Service Uppgift 2";
             this.webServiceUppgift2ToolStripMenuItem.Click += new System.EventHandler(this.WebServiceUppgift2ToolStripMenuItem_Click);
             // 
@@ -134,20 +134,20 @@
             this.eRPintegreringUppgift1ToolStripMenuItem,
             this.eRPintegreringUppgift2ToolStripMenuItem});
             this.integrationOchKonfigureringAvERPsystemToolStripMenuItem.Name = "integrationOchKonfigureringAvERPsystemToolStripMenuItem";
-            this.integrationOchKonfigureringAvERPsystemToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
+            this.integrationOchKonfigureringAvERPsystemToolStripMenuItem.Size = new System.Drawing.Size(385, 26);
             this.integrationOchKonfigureringAvERPsystemToolStripMenuItem.Text = "Integration och konfigurering av ERP-system";
             // 
             // eRPintegreringUppgift1ToolStripMenuItem
             // 
             this.eRPintegreringUppgift1ToolStripMenuItem.Name = "eRPintegreringUppgift1ToolStripMenuItem";
-            this.eRPintegreringUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.eRPintegreringUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
             this.eRPintegreringUppgift1ToolStripMenuItem.Text = "ERP-integrering Uppgift 1";
             this.eRPintegreringUppgift1ToolStripMenuItem.Click += new System.EventHandler(this.ERPintegreringUppgift1ToolStripMenuItem_Click);
             // 
             // eRPintegreringUppgift2ToolStripMenuItem
             // 
             this.eRPintegreringUppgift2ToolStripMenuItem.Name = "eRPintegreringUppgift2ToolStripMenuItem";
-            this.eRPintegreringUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.eRPintegreringUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
             this.eRPintegreringUppgift2ToolStripMenuItem.Text = "ERP-integrering Uppgift 2";
             this.eRPintegreringUppgift2ToolStripMenuItem.Click += new System.EventHandler(this.ERPintegreringUppgift2ToolStripMenuItem_Click);
             // 
@@ -189,7 +189,7 @@
             this.btnProductAndStockHandler.Location = new System.Drawing.Point(15, 60);
             this.btnProductAndStockHandler.Name = "btnProductAndStockHandler";
             this.btnProductAndStockHandler.Size = new System.Drawing.Size(166, 69);
-            this.btnProductAndStockHandler.TabIndex = 10;
+            this.btnProductAndStockHandler.TabIndex = 1;
             this.btnProductAndStockHandler.Text = "Produkt- och lagerhanteraren";
             this.btnProductAndStockHandler.UseVisualStyleBackColor = true;
             this.btnProductAndStockHandler.Click += new System.EventHandler(this.BtnProductAndStockHandler_Click);

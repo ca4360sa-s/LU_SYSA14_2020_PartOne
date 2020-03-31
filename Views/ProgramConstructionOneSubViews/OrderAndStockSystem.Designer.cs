@@ -396,6 +396,7 @@
             this.dataGridViewCOViewAllProducts.Name = "dataGridViewCOViewAllProducts";
             this.dataGridViewCOViewAllProducts.ReadOnly = true;
             this.dataGridViewCOViewAllProducts.RowHeadersVisible = false;
+            this.dataGridViewCOViewAllProducts.RowHeadersWidth = 51;
             this.dataGridViewCOViewAllProducts.RowTemplate.Height = 24;
             this.dataGridViewCOViewAllProducts.Size = new System.Drawing.Size(559, 202);
             this.dataGridViewCOViewAllProducts.TabIndex = 48;
@@ -412,7 +413,7 @@
             this.groupBoxCreateOrderStepOne.Controls.Add(this.lblCOSubmittCustomerID);
             this.groupBoxCreateOrderStepOne.Controls.Add(this.lblCOGenerateOrderID);
             this.groupBoxCreateOrderStepOne.Controls.Add(this.textBoxCOSubmittCustomerID);
-            this.groupBoxCreateOrderStepOne.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCreateOrderStepOne.Font = new System.Drawing.Font("Times New Roman", 9.2F, System.Drawing.FontStyle.Bold);
             this.groupBoxCreateOrderStepOne.Location = new System.Drawing.Point(23, 15);
             this.groupBoxCreateOrderStepOne.Name = "groupBoxCreateOrderStepOne";
             this.groupBoxCreateOrderStepOne.Size = new System.Drawing.Size(488, 273);
@@ -450,7 +451,7 @@
             this.btnCOToStepTwo.Location = new System.Drawing.Point(392, 232);
             this.btnCOToStepTwo.Name = "btnCOToStepTwo";
             this.btnCOToStepTwo.Size = new System.Drawing.Size(90, 35);
-            this.btnCOToStepTwo.TabIndex = 50;
+            this.btnCOToStepTwo.TabIndex = 3;
             this.btnCOToStepTwo.Text = "Steg 2. →";
             this.btnCOToStepTwo.UseVisualStyleBackColor = true;
             this.btnCOToStepTwo.Click += new System.EventHandler(this.btnCOToStepTwo_Click);
@@ -480,7 +481,7 @@
             this.btnCOGenerateOrderID.Location = new System.Drawing.Point(9, 107);
             this.btnCOGenerateOrderID.Name = "btnCOGenerateOrderID";
             this.btnCOGenerateOrderID.Size = new System.Drawing.Size(156, 35);
-            this.btnCOGenerateOrderID.TabIndex = 47;
+            this.btnCOGenerateOrderID.TabIndex = 1;
             this.btnCOGenerateOrderID.Text = "Auto-Generera";
             this.btnCOGenerateOrderID.UseVisualStyleBackColor = true;
             this.btnCOGenerateOrderID.Click += new System.EventHandler(this.BtnCOGenerateOrderID_Click);
@@ -521,7 +522,7 @@
             this.textBoxCOSubmittCustomerID.Location = new System.Drawing.Point(9, 206);
             this.textBoxCOSubmittCustomerID.Name = "textBoxCOSubmittCustomerID";
             this.textBoxCOSubmittCustomerID.Size = new System.Drawing.Size(156, 22);
-            this.textBoxCOSubmittCustomerID.TabIndex = 38;
+            this.textBoxCOSubmittCustomerID.TabIndex = 2;
             // 
             // groupBoxCreateOrderStepTwo
             // 
@@ -622,7 +623,7 @@
             this.textBoxCOSubmittQuantity.Location = new System.Drawing.Point(9, 131);
             this.textBoxCOSubmittQuantity.Name = "textBoxCOSubmittQuantity";
             this.textBoxCOSubmittQuantity.Size = new System.Drawing.Size(156, 22);
-            this.textBoxCOSubmittQuantity.TabIndex = 53;
+            this.textBoxCOSubmittQuantity.TabIndex = 5;
             // 
             // btnCOToStepOneCancelOrder
             // 
@@ -642,7 +643,7 @@
             this.btnCOCreateOrder.Location = new System.Drawing.Point(326, 232);
             this.btnCOCreateOrder.Name = "btnCOCreateOrder";
             this.btnCOCreateOrder.Size = new System.Drawing.Size(156, 35);
-            this.btnCOCreateOrder.TabIndex = 46;
+            this.btnCOCreateOrder.TabIndex = 7;
             this.btnCOCreateOrder.Text = "Skicka ordern";
             this.btnCOCreateOrder.UseVisualStyleBackColor = false;
             this.btnCOCreateOrder.Click += new System.EventHandler(this.BtnCOCreateOrder_Click);
@@ -653,7 +654,7 @@
             this.btnCOAddToOrder.Location = new System.Drawing.Point(9, 181);
             this.btnCOAddToOrder.Name = "btnCOAddToOrder";
             this.btnCOAddToOrder.Size = new System.Drawing.Size(182, 35);
-            this.btnCOAddToOrder.TabIndex = 44;
+            this.btnCOAddToOrder.TabIndex = 6;
             this.btnCOAddToOrder.Text = "Lägg till i ordern ";
             this.btnCOAddToOrder.UseVisualStyleBackColor = false;
             this.btnCOAddToOrder.Click += new System.EventHandler(this.BtnCOAddToOrder_Click);
@@ -684,7 +685,7 @@
             this.textBoxCOSubmittProductID.Location = new System.Drawing.Point(9, 78);
             this.textBoxCOSubmittProductID.Name = "textBoxCOSubmittProductID";
             this.textBoxCOSubmittProductID.Size = new System.Drawing.Size(156, 22);
-            this.textBoxCOSubmittProductID.TabIndex = 41;
+            this.textBoxCOSubmittProductID.TabIndex = 4;
             // 
             // dataGridViewCOViewAllCustomers
             // 
@@ -697,6 +698,7 @@
             this.dataGridViewCOViewAllCustomers.Name = "dataGridViewCOViewAllCustomers";
             this.dataGridViewCOViewAllCustomers.ReadOnly = true;
             this.dataGridViewCOViewAllCustomers.RowHeadersVisible = false;
+            this.dataGridViewCOViewAllCustomers.RowHeadersWidth = 51;
             this.dataGridViewCOViewAllCustomers.RowTemplate.Height = 24;
             this.dataGridViewCOViewAllCustomers.Size = new System.Drawing.Size(559, 202);
             this.dataGridViewCOViewAllCustomers.TabIndex = 47;
@@ -736,6 +738,7 @@
             this.dataGridViewCOOngoingOrder.Name = "dataGridViewCOOngoingOrder";
             this.dataGridViewCOOngoingOrder.ReadOnly = true;
             this.dataGridViewCOOngoingOrder.RowHeadersVisible = false;
+            this.dataGridViewCOOngoingOrder.RowHeadersWidth = 51;
             this.dataGridViewCOOngoingOrder.RowTemplate.Height = 24;
             this.dataGridViewCOOngoingOrder.Size = new System.Drawing.Size(383, 202);
             this.dataGridViewCOOngoingOrder.TabIndex = 0;
@@ -840,7 +843,7 @@
             this.textBoxVOVAViewSpecificCustomer.Location = new System.Drawing.Point(6, 52);
             this.textBoxVOVAViewSpecificCustomer.Name = "textBoxVOVAViewSpecificCustomer";
             this.textBoxVOVAViewSpecificCustomer.Size = new System.Drawing.Size(156, 22);
-            this.textBoxVOVAViewSpecificCustomer.TabIndex = 15;
+            this.textBoxVOVAViewSpecificCustomer.TabIndex = 1;
             // 
             // lblVOVAViewSpecificCustomer
             // 
@@ -927,7 +930,7 @@
             this.radioBtnVOVAViewAllOrdersforSpecificCustomer.Location = new System.Drawing.Point(12, 164);
             this.radioBtnVOVAViewAllOrdersforSpecificCustomer.Name = "radioBtnVOVAViewAllOrdersforSpecificCustomer";
             this.radioBtnVOVAViewAllOrdersforSpecificCustomer.Size = new System.Drawing.Size(234, 21);
-            this.radioBtnVOVAViewAllOrdersforSpecificCustomer.TabIndex = 34;
+            this.radioBtnVOVAViewAllOrdersforSpecificCustomer.TabIndex = 3;
             this.radioBtnVOVAViewAllOrdersforSpecificCustomer.Text = "Visa alla ordrar för specifik kund";
             this.radioBtnVOVAViewAllOrdersforSpecificCustomer.UseVisualStyleBackColor = true;
             this.radioBtnVOVAViewAllOrdersforSpecificCustomer.CheckedChanged += new System.EventHandler(this.RadioBtnVOVAViewAllOrdersforSpecificCustomer_CheckedChanged);
@@ -939,7 +942,7 @@
             this.btnVOVAViewAlternatives.Location = new System.Drawing.Point(90, 238);
             this.btnVOVAViewAlternatives.Name = "btnVOVAViewAlternatives";
             this.btnVOVAViewAlternatives.Size = new System.Drawing.Size(156, 35);
-            this.btnVOVAViewAlternatives.TabIndex = 24;
+            this.btnVOVAViewAlternatives.TabIndex = 5;
             this.btnVOVAViewAlternatives.Text = "Visa";
             this.btnVOVAViewAlternatives.UseVisualStyleBackColor = false;
             this.btnVOVAViewAlternatives.Click += new System.EventHandler(this.BtnVOViewAlternatives_Click);
@@ -952,7 +955,7 @@
             this.radioBtnVOVAViewAllOrders.Location = new System.Drawing.Point(12, 137);
             this.radioBtnVOVAViewAllOrders.Name = "radioBtnVOVAViewAllOrders";
             this.radioBtnVOVAViewAllOrders.Size = new System.Drawing.Size(124, 21);
-            this.radioBtnVOVAViewAllOrders.TabIndex = 33;
+            this.radioBtnVOVAViewAllOrders.TabIndex = 2;
             this.radioBtnVOVAViewAllOrders.TabStop = true;
             this.radioBtnVOVAViewAllOrders.Text = "Visa alla ordrar";
             this.radioBtnVOVAViewAllOrders.UseVisualStyleBackColor = true;
@@ -965,7 +968,7 @@
             this.radioBtnVOVAViewSpecificOrder.Location = new System.Drawing.Point(12, 191);
             this.radioBtnVOVAViewSpecificOrder.Name = "radioBtnVOVAViewSpecificOrder";
             this.radioBtnVOVAViewSpecificOrder.Size = new System.Drawing.Size(144, 21);
-            this.radioBtnVOVAViewSpecificOrder.TabIndex = 32;
+            this.radioBtnVOVAViewSpecificOrder.TabIndex = 4;
             this.radioBtnVOVAViewSpecificOrder.Text = "Visa specifik order";
             this.radioBtnVOVAViewSpecificOrder.UseVisualStyleBackColor = true;
             this.radioBtnVOVAViewSpecificOrder.CheckedChanged += new System.EventHandler(this.RadioBtnVOVAViewSpecificOrder_CheckedChanged);
@@ -991,6 +994,7 @@
             this.dataGridViewVOVA.Name = "dataGridViewVOVA";
             this.dataGridViewVOVA.ReadOnly = true;
             this.dataGridViewVOVA.RowHeadersVisible = false;
+            this.dataGridViewVOVA.RowHeadersWidth = 51;
             this.dataGridViewVOVA.RowTemplate.Height = 24;
             this.dataGridViewVOVA.Size = new System.Drawing.Size(633, 494);
             this.dataGridViewVOVA.TabIndex = 27;
@@ -1321,7 +1325,7 @@
             this.textBoxCPStockQuantity.Location = new System.Drawing.Point(6, 200);
             this.textBoxCPStockQuantity.Name = "textBoxCPStockQuantity";
             this.textBoxCPStockQuantity.Size = new System.Drawing.Size(156, 23);
-            this.textBoxCPStockQuantity.TabIndex = 55;
+            this.textBoxCPStockQuantity.TabIndex = 3;
             // 
             // btnCPCreateProduct
             // 
@@ -1329,7 +1333,7 @@
             this.btnCPCreateProduct.Location = new System.Drawing.Point(368, 341);
             this.btnCPCreateProduct.Name = "btnCPCreateProduct";
             this.btnCPCreateProduct.Size = new System.Drawing.Size(156, 35);
-            this.btnCPCreateProduct.TabIndex = 23;
+            this.btnCPCreateProduct.TabIndex = 5;
             this.btnCPCreateProduct.Text = "Lägg till";
             this.btnCPCreateProduct.UseVisualStyleBackColor = false;
             this.btnCPCreateProduct.Click += new System.EventHandler(this.BtnCreateProduct_Click);
@@ -1349,7 +1353,7 @@
             this.btnCPGenerateProducctID.Location = new System.Drawing.Point(6, 83);
             this.btnCPGenerateProducctID.Name = "btnCPGenerateProducctID";
             this.btnCPGenerateProducctID.Size = new System.Drawing.Size(156, 35);
-            this.btnCPGenerateProducctID.TabIndex = 19;
+            this.btnCPGenerateProducctID.TabIndex = 1;
             this.btnCPGenerateProducctID.Text = "Auto-Generera";
             this.btnCPGenerateProducctID.UseVisualStyleBackColor = true;
             this.btnCPGenerateProducctID.Click += new System.EventHandler(this.BtnGenerateProducctID_Click);
@@ -1371,7 +1375,7 @@
             this.textBoxCPProductDiscription.Multiline = true;
             this.textBoxCPProductDiscription.Name = "textBoxCPProductDiscription";
             this.textBoxCPProductDiscription.Size = new System.Drawing.Size(318, 122);
-            this.textBoxCPProductDiscription.TabIndex = 17;
+            this.textBoxCPProductDiscription.TabIndex = 4;
             // 
             // lblCPProductDiscription
             // 
@@ -1389,7 +1393,7 @@
             this.textBoxCPProductName.Location = new System.Drawing.Point(6, 148);
             this.textBoxCPProductName.Name = "textBoxCPProductName";
             this.textBoxCPProductName.Size = new System.Drawing.Size(156, 23);
-            this.textBoxCPProductName.TabIndex = 15;
+            this.textBoxCPProductName.TabIndex = 2;
             // 
             // lblCPProductName
             // 
@@ -1577,7 +1581,7 @@
             this.textBoxUPStockQuantity.Location = new System.Drawing.Point(9, 245);
             this.textBoxUPStockQuantity.Name = "textBoxUPStockQuantity";
             this.textBoxUPStockQuantity.Size = new System.Drawing.Size(156, 23);
-            this.textBoxUPStockQuantity.TabIndex = 57;
+            this.textBoxUPStockQuantity.TabIndex = 3;
             // 
             // lblUPUpdateInfo
             // 
@@ -1605,7 +1609,7 @@
             this.btnUPUpdateProduct.Location = new System.Drawing.Point(368, 341);
             this.btnUPUpdateProduct.Name = "btnUPUpdateProduct";
             this.btnUPUpdateProduct.Size = new System.Drawing.Size(156, 35);
-            this.btnUPUpdateProduct.TabIndex = 23;
+            this.btnUPUpdateProduct.TabIndex = 5;
             this.btnUPUpdateProduct.Text = "Uppdatera";
             this.btnUPUpdateProduct.UseVisualStyleBackColor = false;
             this.btnUPUpdateProduct.Click += new System.EventHandler(this.BtnUpdateProduct_Click);
@@ -1616,7 +1620,7 @@
             this.textBoxUPSubmittProductID.Location = new System.Drawing.Point(9, 81);
             this.textBoxUPSubmittProductID.Name = "textBoxUPSubmittProductID";
             this.textBoxUPSubmittProductID.Size = new System.Drawing.Size(156, 23);
-            this.textBoxUPSubmittProductID.TabIndex = 20;
+            this.textBoxUPSubmittProductID.TabIndex = 1;
             // 
             // lblUPSubmittProductID
             // 
@@ -1635,7 +1639,7 @@
             this.textBoxUPProductDiscription.Multiline = true;
             this.textBoxUPProductDiscription.Name = "textBoxUPProductDiscription";
             this.textBoxUPProductDiscription.Size = new System.Drawing.Size(315, 77);
-            this.textBoxUPProductDiscription.TabIndex = 17;
+            this.textBoxUPProductDiscription.TabIndex = 4;
             // 
             // lblUPProductDiscription
             // 
@@ -1653,7 +1657,7 @@
             this.textBoxUPProductName.Location = new System.Drawing.Point(9, 191);
             this.textBoxUPProductName.Name = "textBoxUPProductName";
             this.textBoxUPProductName.Size = new System.Drawing.Size(156, 23);
-            this.textBoxUPProductName.TabIndex = 15;
+            this.textBoxUPProductName.TabIndex = 2;
             // 
             // lblUPProductName
             // 
@@ -1693,6 +1697,7 @@
             this.dataGridViewProduct.Name = "dataGridViewProduct";
             this.dataGridViewProduct.ReadOnly = true;
             this.dataGridViewProduct.RowHeadersVisible = false;
+            this.dataGridViewProduct.RowHeadersWidth = 51;
             this.dataGridViewProduct.RowTemplate.Height = 24;
             this.dataGridViewProduct.Size = new System.Drawing.Size(642, 470);
             this.dataGridViewProduct.TabIndex = 25;
@@ -2154,7 +2159,7 @@
             this.btnCPCCreatePrivateCustomer.Location = new System.Drawing.Point(328, 349);
             this.btnCPCCreatePrivateCustomer.Name = "btnCPCCreatePrivateCustomer";
             this.btnCPCCreatePrivateCustomer.Size = new System.Drawing.Size(156, 35);
-            this.btnCPCCreatePrivateCustomer.TabIndex = 23;
+            this.btnCPCCreatePrivateCustomer.TabIndex = 7;
             this.btnCPCCreatePrivateCustomer.Text = "Lägg till";
             this.btnCPCCreatePrivateCustomer.UseVisualStyleBackColor = false;
             this.btnCPCCreatePrivateCustomer.Click += new System.EventHandler(this.BtnCPCCreatePrivateCustomer_Click);
@@ -2165,7 +2170,7 @@
             this.textBoxCPCAddress.Location = new System.Drawing.Point(6, 253);
             this.textBoxCPCAddress.Name = "textBoxCPCAddress";
             this.textBoxCPCAddress.Size = new System.Drawing.Size(156, 23);
-            this.textBoxCPCAddress.TabIndex = 22;
+            this.textBoxCPCAddress.TabIndex = 6;
             // 
             // lblCPCAddress
             // 
@@ -2192,7 +2197,7 @@
             this.btnCPCGeneratePrivateCustomerID.Location = new System.Drawing.Point(6, 80);
             this.btnCPCGeneratePrivateCustomerID.Name = "btnCPCGeneratePrivateCustomerID";
             this.btnCPCGeneratePrivateCustomerID.Size = new System.Drawing.Size(156, 35);
-            this.btnCPCGeneratePrivateCustomerID.TabIndex = 19;
+            this.btnCPCGeneratePrivateCustomerID.TabIndex = 3;
             this.btnCPCGeneratePrivateCustomerID.Text = "Auto-Generera";
             this.btnCPCGeneratePrivateCustomerID.UseVisualStyleBackColor = true;
             this.btnCPCGeneratePrivateCustomerID.Click += new System.EventHandler(this.BtnCPCGeneratePrivateCustomerID_Click);
@@ -2213,7 +2218,7 @@
             this.textBoxCPCLastName.Location = new System.Drawing.Point(6, 199);
             this.textBoxCPCLastName.Name = "textBoxCPCLastName";
             this.textBoxCPCLastName.Size = new System.Drawing.Size(156, 25);
-            this.textBoxCPCLastName.TabIndex = 17;
+            this.textBoxCPCLastName.TabIndex = 5;
             // 
             // lblCPCLastName
             // 
@@ -2231,7 +2236,7 @@
             this.textBoxCPCFirstName.Location = new System.Drawing.Point(6, 143);
             this.textBoxCPCFirstName.Name = "textBoxCPCFirstName";
             this.textBoxCPCFirstName.Size = new System.Drawing.Size(156, 25);
-            this.textBoxCPCFirstName.TabIndex = 15;
+            this.textBoxCPCFirstName.TabIndex = 4;
             // 
             // lblCPCFirstName
             // 
@@ -2397,7 +2402,7 @@
             this.radioBtnCreateCompanyCustomer.Location = new System.Drawing.Point(141, 28);
             this.radioBtnCreateCompanyCustomer.Name = "radioBtnCreateCompanyCustomer";
             this.radioBtnCreateCompanyCustomer.Size = new System.Drawing.Size(114, 21);
-            this.radioBtnCreateCompanyCustomer.TabIndex = 12;
+            this.radioBtnCreateCompanyCustomer.TabIndex = 2;
             this.radioBtnCreateCompanyCustomer.Text = "Företagskund";
             this.radioBtnCreateCompanyCustomer.UseVisualStyleBackColor = true;
             this.radioBtnCreateCompanyCustomer.CheckedChanged += new System.EventHandler(this.RadioBtnCreateCompanyCustomer_CheckedChanged);
@@ -2410,7 +2415,7 @@
             this.radioBtnCreatePrivateCustomer.Location = new System.Drawing.Point(6, 28);
             this.radioBtnCreatePrivateCustomer.Name = "radioBtnCreatePrivateCustomer";
             this.radioBtnCreatePrivateCustomer.Size = new System.Drawing.Size(98, 21);
-            this.radioBtnCreatePrivateCustomer.TabIndex = 11;
+            this.radioBtnCreatePrivateCustomer.TabIndex = 1;
             this.radioBtnCreatePrivateCustomer.TabStop = true;
             this.radioBtnCreatePrivateCustomer.Text = "Privatkund";
             this.radioBtnCreatePrivateCustomer.UseVisualStyleBackColor = true;
@@ -2533,7 +2538,7 @@
             this.textBoxUPCLastName.Location = new System.Drawing.Point(9, 328);
             this.textBoxUPCLastName.Name = "textBoxUPCLastName";
             this.textBoxUPCLastName.Size = new System.Drawing.Size(156, 25);
-            this.textBoxUPCLastName.TabIndex = 40;
+            this.textBoxUPCLastName.TabIndex = 6;
             // 
             // lblUPCLastName
             // 
@@ -2571,7 +2576,7 @@
             this.btnUPCUpdatePrivateCustomer.Location = new System.Drawing.Point(253, 364);
             this.btnUPCUpdatePrivateCustomer.Name = "btnUPCUpdatePrivateCustomer";
             this.btnUPCUpdatePrivateCustomer.Size = new System.Drawing.Size(156, 35);
-            this.btnUPCUpdatePrivateCustomer.TabIndex = 36;
+            this.btnUPCUpdatePrivateCustomer.TabIndex = 7;
             this.btnUPCUpdatePrivateCustomer.Text = "Uppdatera";
             this.btnUPCUpdatePrivateCustomer.UseVisualStyleBackColor = false;
             this.btnUPCUpdatePrivateCustomer.Click += new System.EventHandler(this.BtnUPCUpdatePrivateCustomer_Click);
@@ -2582,7 +2587,7 @@
             this.textBoxUPCPrivateCustomerAddress.Location = new System.Drawing.Point(9, 268);
             this.textBoxUPCPrivateCustomerAddress.Name = "textBoxUPCPrivateCustomerAddress";
             this.textBoxUPCPrivateCustomerAddress.Size = new System.Drawing.Size(156, 25);
-            this.textBoxUPCPrivateCustomerAddress.TabIndex = 35;
+            this.textBoxUPCPrivateCustomerAddress.TabIndex = 5;
             // 
             // lblUPCPrivateCustomerAddress
             // 
@@ -2610,7 +2615,7 @@
             this.textBoxUPCFirstName.Location = new System.Drawing.Point(9, 215);
             this.textBoxUPCFirstName.Name = "textBoxUPCFirstName";
             this.textBoxUPCFirstName.Size = new System.Drawing.Size(156, 25);
-            this.textBoxUPCFirstName.TabIndex = 31;
+            this.textBoxUPCFirstName.TabIndex = 4;
             // 
             // lblUPCFirstName
             // 
@@ -2628,7 +2633,7 @@
             this.textBoxUPCSubmittCustomerID.Location = new System.Drawing.Point(9, 97);
             this.textBoxUPCSubmittCustomerID.Name = "textBoxUPCSubmittCustomerID";
             this.textBoxUPCSubmittCustomerID.Size = new System.Drawing.Size(156, 25);
-            this.textBoxUPCSubmittCustomerID.TabIndex = 29;
+            this.textBoxUPCSubmittCustomerID.TabIndex = 3;
             // 
             // groupBoxUpdateCompanyCustomer
             // 
@@ -2793,7 +2798,7 @@
             this.radioBtnUpdateCompanyCustomer.Location = new System.Drawing.Point(141, 26);
             this.radioBtnUpdateCompanyCustomer.Name = "radioBtnUpdateCompanyCustomer";
             this.radioBtnUpdateCompanyCustomer.Size = new System.Drawing.Size(114, 21);
-            this.radioBtnUpdateCompanyCustomer.TabIndex = 17;
+            this.radioBtnUpdateCompanyCustomer.TabIndex = 2;
             this.radioBtnUpdateCompanyCustomer.Text = "Företagskund";
             this.radioBtnUpdateCompanyCustomer.UseVisualStyleBackColor = true;
             this.radioBtnUpdateCompanyCustomer.CheckedChanged += new System.EventHandler(this.RadioBtnUpdateCompanyCustomer_CheckedChanged);
@@ -2806,7 +2811,7 @@
             this.radioBtnUpdatePrivateCustomer.Location = new System.Drawing.Point(6, 26);
             this.radioBtnUpdatePrivateCustomer.Name = "radioBtnUpdatePrivateCustomer";
             this.radioBtnUpdatePrivateCustomer.Size = new System.Drawing.Size(98, 21);
-            this.radioBtnUpdatePrivateCustomer.TabIndex = 16;
+            this.radioBtnUpdatePrivateCustomer.TabIndex = 1;
             this.radioBtnUpdatePrivateCustomer.TabStop = true;
             this.radioBtnUpdatePrivateCustomer.Text = "Privatkund";
             this.radioBtnUpdatePrivateCustomer.UseVisualStyleBackColor = true;
@@ -2899,6 +2904,7 @@
             this.dataGridViewCustomer.Name = "dataGridViewCustomer";
             this.dataGridViewCustomer.ReadOnly = true;
             this.dataGridViewCustomer.RowHeadersVisible = false;
+            this.dataGridViewCustomer.RowHeadersWidth = 51;
             this.dataGridViewCustomer.RowTemplate.Height = 24;
             this.dataGridViewCustomer.Size = new System.Drawing.Size(642, 459);
             this.dataGridViewCustomer.TabIndex = 17;

@@ -78,6 +78,7 @@ namespace LU_SYSA14_2020_PartOne.Views
 
         private void BtnRetrieveData_Click(object sender, EventArgs e)
         {
+            groupBoxViewAlternatives.Visible = true; 
             dataGridViewDisplayRetrievedData.DataSource = null;
             ClearAllFeedback();
             numberOfRows.Clear();

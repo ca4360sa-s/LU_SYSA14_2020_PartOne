@@ -76,10 +76,11 @@
             this.groupBoxViewAlternatives.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxViewAlternatives.Location = new System.Drawing.Point(303, 193);
             this.groupBoxViewAlternatives.Name = "groupBoxViewAlternatives";
-            this.groupBoxViewAlternatives.Size = new System.Drawing.Size(510, 452);
+            this.groupBoxViewAlternatives.Size = new System.Drawing.Size(510, 535);
             this.groupBoxViewAlternatives.TabIndex = 2;
             this.groupBoxViewAlternatives.TabStop = false;
             this.groupBoxViewAlternatives.Text = "Visningsalternativ";
+            this.groupBoxViewAlternatives.Visible = false;
             // 
             // lblViewAlternativesPF
             // 
@@ -113,12 +114,13 @@
             this.dataGridViewDisplayRetrievedData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewDisplayRetrievedData.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewDisplayRetrievedData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDisplayRetrievedData.Location = new System.Drawing.Point(33, 125);
+            this.dataGridViewDisplayRetrievedData.Location = new System.Drawing.Point(33, 170);
             this.dataGridViewDisplayRetrievedData.Name = "dataGridViewDisplayRetrievedData";
             this.dataGridViewDisplayRetrievedData.ReadOnly = true;
             this.dataGridViewDisplayRetrievedData.RowHeadersVisible = false;
+            this.dataGridViewDisplayRetrievedData.RowHeadersWidth = 51;
             this.dataGridViewDisplayRetrievedData.RowTemplate.Height = 24;
-            this.dataGridViewDisplayRetrievedData.Size = new System.Drawing.Size(438, 303);
+            this.dataGridViewDisplayRetrievedData.Size = new System.Drawing.Size(438, 335);
             this.dataGridViewDisplayRetrievedData.TabIndex = 5;
             // 
             // comboBoxViewAlternatives
@@ -126,20 +128,20 @@
             this.comboBoxViewAlternatives.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxViewAlternatives.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxViewAlternatives.FormattingEnabled = true;
+            this.comboBoxViewAlternatives.Items.AddRange(new object[] {
+            "Inga visningsalternativ ännu"});
             this.comboBoxViewAlternatives.Location = new System.Drawing.Point(33, 69);
             this.comboBoxViewAlternatives.Name = "comboBoxViewAlternatives";
-            this.comboBoxViewAlternatives.Size = new System.Drawing.Size(253, 27);
-            this.comboBoxViewAlternatives.TabIndex = 4;
-            this.comboBoxViewAlternatives.Items.Add("Inga visningsalternativ ännu");
-            this.comboBoxViewAlternatives.SelectedIndex = 0;
+            this.comboBoxViewAlternatives.Size = new System.Drawing.Size(438, 27);
+            this.comboBoxViewAlternatives.TabIndex = 2;
             // 
             // btnViewAlternatives
             // 
             this.btnViewAlternatives.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAlternatives.Location = new System.Drawing.Point(339, 69);
+            this.btnViewAlternatives.Location = new System.Drawing.Point(186, 115);
             this.btnViewAlternatives.Name = "btnViewAlternatives";
             this.btnViewAlternatives.Size = new System.Drawing.Size(132, 35);
-            this.btnViewAlternatives.TabIndex = 0;
+            this.btnViewAlternatives.TabIndex = 3;
             this.btnViewAlternatives.Text = "Visa";
             this.btnViewAlternatives.UseVisualStyleBackColor = true;
             this.btnViewAlternatives.Click += new System.EventHandler(this.BtnViewAlternatives_Click);
@@ -150,7 +152,7 @@
             this.btnRetrieveData.Location = new System.Drawing.Point(489, 144);
             this.btnRetrieveData.Name = "btnRetrieveData";
             this.btnRetrieveData.Size = new System.Drawing.Size(132, 35);
-            this.btnRetrieveData.TabIndex = 3;
+            this.btnRetrieveData.TabIndex = 1;
             this.btnRetrieveData.Text = "Hämta data";
             this.btnRetrieveData.UseVisualStyleBackColor = true;
             this.btnRetrieveData.Click += new System.EventHandler(this.BtnRetrieveData_Click);
@@ -174,13 +176,13 @@
             this.integrationsteknologierToolStripMenuItem,
             this.integrationOchKonfigureringAvERPsystemToolStripMenuItem});
             this.menyToolStripMenuItem.Name = "menyToolStripMenuItem";
-            this.menyToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.menyToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.menyToolStripMenuItem.Text = "Meny";
             // 
             // startmenyToolStripMenuItem
             // 
             this.startmenyToolStripMenuItem.Name = "startmenyToolStripMenuItem";
-            this.startmenyToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
+            this.startmenyToolStripMenuItem.Size = new System.Drawing.Size(385, 26);
             this.startmenyToolStripMenuItem.Text = "Startmeny";
             this.startmenyToolStripMenuItem.Click += new System.EventHandler(this.StartmenyToolStripMenuItem_Click);
             // 
@@ -190,20 +192,20 @@
             this.programkonstruktionUppgift1ToolStripMenuItem,
             this.programkonstruktionUppgift2ToolStripMenuItem});
             this.programkonstruktionToolStripMenuItem.Name = "programkonstruktionToolStripMenuItem";
-            this.programkonstruktionToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
+            this.programkonstruktionToolStripMenuItem.Size = new System.Drawing.Size(385, 26);
             this.programkonstruktionToolStripMenuItem.Text = "Programkonstruktion";
             // 
             // programkonstruktionUppgift1ToolStripMenuItem
             // 
             this.programkonstruktionUppgift1ToolStripMenuItem.Name = "programkonstruktionUppgift1ToolStripMenuItem";
-            this.programkonstruktionUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(289, 26);
+            this.programkonstruktionUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
             this.programkonstruktionUppgift1ToolStripMenuItem.Text = "Programkonstruktion Uppgift 1";
             this.programkonstruktionUppgift1ToolStripMenuItem.Click += new System.EventHandler(this.ProgramkonstruktionUppgift1ToolStripMenuItem_Click);
             // 
             // programkonstruktionUppgift2ToolStripMenuItem
             // 
             this.programkonstruktionUppgift2ToolStripMenuItem.Name = "programkonstruktionUppgift2ToolStripMenuItem";
-            this.programkonstruktionUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(289, 26);
+            this.programkonstruktionUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
             this.programkonstruktionUppgift2ToolStripMenuItem.Text = "Programkonstruktion Uppgift 2";
             this.programkonstruktionUppgift2ToolStripMenuItem.Click += new System.EventHandler(this.ProgramkonstruktionUppgift2ToolStripMenuItem_Click);
             // 
@@ -213,20 +215,20 @@
             this.webServiceUppgift1ToolStripMenuItem,
             this.webServiceUppgift2ToolStripMenuItem});
             this.integrationsteknologierToolStripMenuItem.Name = "integrationsteknologierToolStripMenuItem";
-            this.integrationsteknologierToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
+            this.integrationsteknologierToolStripMenuItem.Size = new System.Drawing.Size(385, 26);
             this.integrationsteknologierToolStripMenuItem.Text = "Integrationsteknologier";
             // 
             // webServiceUppgift1ToolStripMenuItem
             // 
             this.webServiceUppgift1ToolStripMenuItem.Name = "webServiceUppgift1ToolStripMenuItem";
-            this.webServiceUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
+            this.webServiceUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.webServiceUppgift1ToolStripMenuItem.Text = "Web Service Uppgift 1";
             this.webServiceUppgift1ToolStripMenuItem.Click += new System.EventHandler(this.WebServiceUppgift1ToolStripMenuItem_Click);
             // 
             // webServiceUppgift2ToolStripMenuItem
             // 
             this.webServiceUppgift2ToolStripMenuItem.Name = "webServiceUppgift2ToolStripMenuItem";
-            this.webServiceUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
+            this.webServiceUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.webServiceUppgift2ToolStripMenuItem.Text = "Web Service Uppgift 2";
             this.webServiceUppgift2ToolStripMenuItem.Click += new System.EventHandler(this.WebServiceUppgift2ToolStripMenuItem_Click);
             // 
@@ -236,20 +238,20 @@
             this.eRPintegreringUppgift1ToolStripMenuItem,
             this.eRPintegreringUppgift2ToolStripMenuItem});
             this.integrationOchKonfigureringAvERPsystemToolStripMenuItem.Name = "integrationOchKonfigureringAvERPsystemToolStripMenuItem";
-            this.integrationOchKonfigureringAvERPsystemToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
+            this.integrationOchKonfigureringAvERPsystemToolStripMenuItem.Size = new System.Drawing.Size(385, 26);
             this.integrationOchKonfigureringAvERPsystemToolStripMenuItem.Text = "Integration och konfigurering av ERP-system";
             // 
             // eRPintegreringUppgift1ToolStripMenuItem
             // 
             this.eRPintegreringUppgift1ToolStripMenuItem.Name = "eRPintegreringUppgift1ToolStripMenuItem";
-            this.eRPintegreringUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.eRPintegreringUppgift1ToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
             this.eRPintegreringUppgift1ToolStripMenuItem.Text = "ERP-integrering Uppgift 1";
             this.eRPintegreringUppgift1ToolStripMenuItem.Click += new System.EventHandler(this.ERPintegreringUppgift1ToolStripMenuItem_Click);
             // 
             // eRPintegreringUppgift2ToolStripMenuItem
             // 
             this.eRPintegreringUppgift2ToolStripMenuItem.Name = "eRPintegreringUppgift2ToolStripMenuItem";
-            this.eRPintegreringUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.eRPintegreringUppgift2ToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
             this.eRPintegreringUppgift2ToolStripMenuItem.Text = "ERP-integrering Uppgift 2";
             this.eRPintegreringUppgift2ToolStripMenuItem.Click += new System.EventHandler(this.ERPintegreringUppgift2ToolStripMenuItem_Click);
             // 

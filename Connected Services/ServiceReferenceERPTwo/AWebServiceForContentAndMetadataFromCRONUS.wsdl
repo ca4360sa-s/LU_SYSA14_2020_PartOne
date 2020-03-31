@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="LU_SYSA14_2020_IntegrationTechnologies_CSG19" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="LU_SYSA14_2020_IntegrationTechnologies_CSG19" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="LU_SYSA14_2020_IntegrationTechnologies_CSG19">
+      <s:element name="DisplayMetadataFromTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisplayMetadataFromTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayMetadataFromTableResult" type="tns:ArrayOfMetadataModell" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMetadataModell">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MetadataModell" nillable="true" type="tns:MetadataModell" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MetadataModell">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Column_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Ordinal_position" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Is_nullable" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data_type" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Character_maximum_length" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayEmployee">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayEmployeeResult" type="tns:ArrayOfEmployee" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEmployee">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Employee" nillable="true" type="tns:Employee" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Employee">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="No_" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayEmployeeAbsence">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayEmployeeAbsenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayEmployeeAbsenceResult" type="tns:ArrayOfEmployeeAbsence" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEmployeeAbsence">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EmployeeAbsence" nillable="true" type="tns:EmployeeAbsence" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EmployeeAbsence">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="EntryNo_" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeNo_" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CauseOfAbsenceCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayEmployeeQualification">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayEmployeeQualificationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayEmployeeQualificationResult" type="tns:ArrayOfEmployeeQualification" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEmployeeQualification">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EmployeeQualification" nillable="true" type="tns:EmployeeQualification" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EmployeeQualification">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeNo_" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LineNo_" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="QualificationCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayEmployeeStatisticsGroup">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayEmployeeStatisticsGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayEmployeeStatisticsGroupResult" type="tns:ArrayOfEmployeeStatisticsGroup" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEmployeeStatisticsGroup">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EmployeeStatisticsGroup" nillable="true" type="tns:EmployeeStatisticsGroup" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EmployeeStatisticsGroup">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayEmploymentContract">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayEmploymentContractResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayEmploymentContractResult" type="tns:ArrayOfEmploymentContract" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEmploymentContract">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EmploymentContract" nillable="true" type="tns:EmploymentContract" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EmploymentContract">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayEmployeesAndRelatives">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayEmployeesAndRelativesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayEmployeesAndRelativesResult" type="tns:ArrayOfEmployeeAndRelative" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEmployeeAndRelative">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EmployeeAndRelative" nillable="true" type="tns:EmployeeAndRelative" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EmployeeAndRelative">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeNo_" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LineNo_" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RelativeCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayEmployeesSickDuring2004">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayEmployeesSickDuring2004Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayEmployeesSickDuring2004Result" type="tns:ArrayOfEmployee" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisplayEmployeeMostAbsentDuring2004">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayEmployeeMostAbsentDuring2004Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayEmployeeMostAbsentDuring2004Result" type="tns:ArrayOfEmployee" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisplayAllKeys">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayAllKeysResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayAllKeysResult" type="tns:ArrayOfKey" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfKey">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Key" nillable="true" type="tns:Key" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Key">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Xtype" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayAllIndexes">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayAllIndexesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayAllIndexesResult" type="tns:ArrayOfIndex" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfIndex">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Index" nillable="true" type="tns:Index" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Index">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Object_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Index_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Typ_desc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayAllConstraints">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayAllConstraintsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayAllConstraintsResult" type="tns:ArrayOfConstraint" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfConstraint">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Constraint" nillable="true" type="tns:Constraint" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Constraint">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Constraint_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Constraint_type" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayAllTablesViaINFORMTION_SCHEMA">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayAllTablesViaINFORMTION_SCHEMAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayAllTablesViaINFORMTION_SCHEMAResult" type="tns:ArrayOfTable" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTable">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Table" nillable="true" type="tns:Table" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Table">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NameT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeT" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayAllTablesViaSYSOBJECT">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayAllTablesViaSYSOBJECTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayAllTablesViaSYSOBJECTResult" type="tns:ArrayOfTable" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisplayAllColumsViaINFORMATION_SCHEMA">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayAllColumsViaINFORMATION_SCHEMAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayAllColumsViaINFORMATION_SCHEMAResult" type="tns:ArrayOfColum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfColum">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Colum" nillable="true" type="tns:Colum" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Colum">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NameT" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DisplayALLColumsViaSYS">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisplayALLColumsViaSYSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayALLColumsViaSYSResult" type="tns:ArrayOfColum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DisplayMetadataFromTableSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayMetadataFromTable" />
+  </wsdl:message>
+  <wsdl:message name="DisplayMetadataFromTableSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayMetadataFromTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayEmployee" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeAbsenceSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeAbsence" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeAbsenceSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeAbsenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeQualificationSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeQualification" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeQualificationSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeQualificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeStatisticsGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeStatisticsGroup" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeStatisticsGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeStatisticsGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmploymentContractSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayEmploymentContract" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmploymentContractSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayEmploymentContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeesAndRelativesSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeesAndRelatives" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeesAndRelativesSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeesAndRelativesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeesSickDuring2004SoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeesSickDuring2004" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeesSickDuring2004SoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeesSickDuring2004Response" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeMostAbsentDuring2004SoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeMostAbsentDuring2004" />
+  </wsdl:message>
+  <wsdl:message name="DisplayEmployeeMostAbsentDuring2004SoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayEmployeeMostAbsentDuring2004Response" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllKeysSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayAllKeys" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllKeysSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayAllKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllIndexesSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayAllIndexes" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllIndexesSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayAllIndexesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllConstraintsSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayAllConstraints" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllConstraintsSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayAllConstraintsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllTablesViaINFORMTION_SCHEMASoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayAllTablesViaINFORMTION_SCHEMA" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllTablesViaINFORMTION_SCHEMASoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayAllTablesViaINFORMTION_SCHEMAResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllTablesViaSYSOBJECTSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayAllTablesViaSYSOBJECT" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllTablesViaSYSOBJECTSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayAllTablesViaSYSOBJECTResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllColumsViaINFORMATION_SCHEMASoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayAllColumsViaINFORMATION_SCHEMA" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAllColumsViaINFORMATION_SCHEMASoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayAllColumsViaINFORMATION_SCHEMAResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisplayALLColumsViaSYSSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayALLColumsViaSYS" />
+  </wsdl:message>
+  <wsdl:message name="DisplayALLColumsViaSYSSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayALLColumsViaSYSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AWebServiceForContentAndMetadataFromCRONUSSoap">
+    <wsdl:operation name="DisplayMetadataFromTable">
+      <wsdl:input message="tns:DisplayMetadataFromTableSoapIn" />
+      <wsdl:output message="tns:DisplayMetadataFromTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployee">
+      <wsdl:input message="tns:DisplayEmployeeSoapIn" />
+      <wsdl:output message="tns:DisplayEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeAbsence">
+      <wsdl:input message="tns:DisplayEmployeeAbsenceSoapIn" />
+      <wsdl:output message="tns:DisplayEmployeeAbsenceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeQualification">
+      <wsdl:input message="tns:DisplayEmployeeQualificationSoapIn" />
+      <wsdl:output message="tns:DisplayEmployeeQualificationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeStatisticsGroup">
+      <wsdl:input message="tns:DisplayEmployeeStatisticsGroupSoapIn" />
+      <wsdl:output message="tns:DisplayEmployeeStatisticsGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmploymentContract">
+      <wsdl:input message="tns:DisplayEmploymentContractSoapIn" />
+      <wsdl:output message="tns:DisplayEmploymentContractSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeesAndRelatives">
+      <wsdl:input message="tns:DisplayEmployeesAndRelativesSoapIn" />
+      <wsdl:output message="tns:DisplayEmployeesAndRelativesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeesSickDuring2004">
+      <wsdl:input message="tns:DisplayEmployeesSickDuring2004SoapIn" />
+      <wsdl:output message="tns:DisplayEmployeesSickDuring2004SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeMostAbsentDuring2004">
+      <wsdl:input message="tns:DisplayEmployeeMostAbsentDuring2004SoapIn" />
+      <wsdl:output message="tns:DisplayEmployeeMostAbsentDuring2004SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllKeys">
+      <wsdl:input message="tns:DisplayAllKeysSoapIn" />
+      <wsdl:output message="tns:DisplayAllKeysSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllIndexes">
+      <wsdl:input message="tns:DisplayAllIndexesSoapIn" />
+      <wsdl:output message="tns:DisplayAllIndexesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllConstraints">
+      <wsdl:input message="tns:DisplayAllConstraintsSoapIn" />
+      <wsdl:output message="tns:DisplayAllConstraintsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllTablesViaINFORMTION_SCHEMA">
+      <wsdl:input message="tns:DisplayAllTablesViaINFORMTION_SCHEMASoapIn" />
+      <wsdl:output message="tns:DisplayAllTablesViaINFORMTION_SCHEMASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllTablesViaSYSOBJECT">
+      <wsdl:input message="tns:DisplayAllTablesViaSYSOBJECTSoapIn" />
+      <wsdl:output message="tns:DisplayAllTablesViaSYSOBJECTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllColumsViaINFORMATION_SCHEMA">
+      <wsdl:input message="tns:DisplayAllColumsViaINFORMATION_SCHEMASoapIn" />
+      <wsdl:output message="tns:DisplayAllColumsViaINFORMATION_SCHEMASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayALLColumsViaSYS">
+      <wsdl:input message="tns:DisplayALLColumsViaSYSSoapIn" />
+      <wsdl:output message="tns:DisplayALLColumsViaSYSSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AWebServiceForContentAndMetadataFromCRONUSSoap" type="tns:AWebServiceForContentAndMetadataFromCRONUSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DisplayMetadataFromTable">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayMetadataFromTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployee">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeAbsence">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeeAbsence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeQualification">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeeQualification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeStatisticsGroup">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeeStatisticsGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmploymentContract">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmploymentContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeesAndRelatives">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeesAndRelatives" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeesSickDuring2004">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeesSickDuring2004" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeMostAbsentDuring2004">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeeMostAbsentDuring2004" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllKeys">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllIndexes">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllIndexes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllConstraints">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllConstraints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllTablesViaINFORMTION_SCHEMA">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllTablesViaINFORMTION_SCHEMA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllTablesViaSYSOBJECT">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllTablesViaSYSOBJECT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllColumsViaINFORMATION_SCHEMA">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllColumsViaINFORMATION_SCHEMA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayALLColumsViaSYS">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayALLColumsViaSYS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AWebServiceForContentAndMetadataFromCRONUSSoap12" type="tns:AWebServiceForContentAndMetadataFromCRONUSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DisplayMetadataFromTable">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayMetadataFromTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployee">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeAbsence">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeeAbsence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeQualification">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeeQualification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeStatisticsGroup">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeeStatisticsGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmploymentContract">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmploymentContract" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeesAndRelatives">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeesAndRelatives" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeesSickDuring2004">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeesSickDuring2004" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayEmployeeMostAbsentDuring2004">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayEmployeeMostAbsentDuring2004" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllKeys">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllKeys" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllIndexes">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllIndexes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllConstraints">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllConstraints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllTablesViaINFORMTION_SCHEMA">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllTablesViaINFORMTION_SCHEMA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllTablesViaSYSOBJECT">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllTablesViaSYSOBJECT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllColumsViaINFORMATION_SCHEMA">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAllColumsViaINFORMATION_SCHEMA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayALLColumsViaSYS">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayALLColumsViaSYS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AWebServiceForContentAndMetadataFromCRONUS">
+    <wsdl:port name="AWebServiceForContentAndMetadataFromCRONUSSoap" binding="tns:AWebServiceForContentAndMetadataFromCRONUSSoap">
+      <soap:address location="https://localhost:44381/AWebServiceForContentAndMetadataFromCRONUS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AWebServiceForContentAndMetadataFromCRONUSSoap12" binding="tns:AWebServiceForContentAndMetadataFromCRONUSSoap12">
+      <soap12:address location="https://localhost:44381/AWebServiceForContentAndMetadataFromCRONUS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

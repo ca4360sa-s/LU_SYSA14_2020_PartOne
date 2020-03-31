@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="LU_SYSA14_2020_IntegrationTechnologies_CSG19" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="LU_SYSA14_2020_IntegrationTechnologies_CSG19" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="LU_SYSA14_2020_IntegrationTechnologies_CSG19">
+      <s:element name="DisplayAFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisplayAFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayAFileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAllFileNamesInTheDirectory">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindAllFileNamesInTheDirectoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAllFileNamesInTheDirectoryResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DisplayAFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DisplayAFile" />
+  </wsdl:message>
+  <wsdl:message name="DisplayAFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DisplayAFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllFileNamesInTheDirectorySoapIn">
+    <wsdl:part name="parameters" element="tns:FindAllFileNamesInTheDirectory" />
+  </wsdl:message>
+  <wsdl:message name="FindAllFileNamesInTheDirectorySoapOut">
+    <wsdl:part name="parameters" element="tns:FindAllFileNamesInTheDirectoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AWebServiceToHandleFilesSoap">
+    <wsdl:operation name="DisplayAFile">
+      <wsdl:input message="tns:DisplayAFileSoapIn" />
+      <wsdl:output message="tns:DisplayAFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllFileNamesInTheDirectory">
+      <wsdl:input message="tns:FindAllFileNamesInTheDirectorySoapIn" />
+      <wsdl:output message="tns:FindAllFileNamesInTheDirectorySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AWebServiceToHandleFilesSoap" type="tns:AWebServiceToHandleFilesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DisplayAFile">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllFileNamesInTheDirectory">
+      <soap:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/FindAllFileNamesInTheDirectory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AWebServiceToHandleFilesSoap12" type="tns:AWebServiceToHandleFilesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DisplayAFile">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/DisplayAFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllFileNamesInTheDirectory">
+      <soap12:operation soapAction="LU_SYSA14_2020_IntegrationTechnologies_CSG19/FindAllFileNamesInTheDirectory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AWebServiceToHandleFiles">
+    <wsdl:port name="AWebServiceToHandleFilesSoap" binding="tns:AWebServiceToHandleFilesSoap">
+      <soap:address location="https://localhost:44327/AWebServiceToHandleFiles.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AWebServiceToHandleFilesSoap12" binding="tns:AWebServiceToHandleFilesSoap12">
+      <soap12:address location="https://localhost:44327/AWebServiceToHandleFiles.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

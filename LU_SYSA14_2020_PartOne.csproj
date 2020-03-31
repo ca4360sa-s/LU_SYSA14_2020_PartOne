@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,7 +48,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\ServiceReferenceERPOne\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReferenceERPTwo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReferenceWSOne\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReferenceWSTwo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\Controller_ERP_Two.cs" />
     <Compile Include="Controllers\Controller_PCTwo.cs" />
     <Compile Include="Models\DAL_PCTwo.cs" />
     <Compile Include="Models\ModelMethods.cs" />
@@ -135,6 +158,124 @@
     <EmbeddedResource Include="Views\Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\ServiceReferenceERPOne\AWebServiceForCRONUS.wsdl" />
+    <None Include="Connected Services\ServiceReferenceERPOne\LU_SYSA14_2020_PartOne.ServiceReferenceERPOne.CreateEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPOne\LU_SYSA14_2020_PartOne.ServiceReferenceERPOne.DeleteEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPOne\LU_SYSA14_2020_PartOne.ServiceReferenceERPOne.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPOne\LU_SYSA14_2020_PartOne.ServiceReferenceERPOne.UpdateEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPOne\LU_SYSA14_2020_PartOne.ServiceReferenceERPOne.ViewEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\AWebServiceForContentAndMetadataFromCRONUS.wsdl" />
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.Colum.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.Constraint.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayAllColumsViaINFORMATION_SCHEMAResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayALLColumsViaSYSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayAllConstraintsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayAllIndexesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayAllKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayAllTablesViaINFORMTION_SCHEMAResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayAllTablesViaSYSOBJECTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayEmployeeAbsenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayEmployeeMostAbsentDuring2004Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayEmployeeQualificationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayEmployeesAndRelativesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayEmployeesSickDuring2004Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayEmployeeStatisticsGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayEmploymentContractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.DisplayMetadataFromTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.EmployeeAbsence.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.EmployeeAndRelative.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.EmployeeQualification.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.EmployeeStatisticsGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.EmploymentContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.Index.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.Key.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.MetadataModell.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceERPTwo\LU_SYSA14_2020_PartOne.ServiceReferenceERPTwo.Table.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceWSOne\AWebServiceToHandleFiles.wsdl" />
+    <None Include="Connected Services\ServiceReferenceWSOne\LU_SYSA14_2020_PartOne.ServiceReferenceWSOne.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceWSOne\LU_SYSA14_2020_PartOne.ServiceReferenceWSOne.DisplayAFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceWSOne\LU_SYSA14_2020_PartOne.ServiceReferenceWSOne.FindAllFileNamesInTheDirectoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceWSTwo\AWebServiceToHandleDB.wsdl" />
+    <None Include="Connected Services\ServiceReferenceWSTwo\LU_SYSA14_2020_PartOne.ServiceReferenceWSTwo.DisplayAllProductsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceWSTwo\LU_SYSA14_2020_PartOne.ServiceReferenceWSTwo.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -148,6 +289,62 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceERPOne\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceERPTwo\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceWSOne\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceWSTwo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceWSOne\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceWSOne\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceWSOne\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceWSTwo\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceWSTwo\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceWSTwo\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceERPOne\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceERPOne\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceERPOne\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceERPTwo\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceERPTwo\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceERPTwo\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

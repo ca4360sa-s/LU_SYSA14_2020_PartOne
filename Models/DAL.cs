@@ -10,7 +10,8 @@ namespace LU_SYSA14_2020_PartOne.Models
 {
     static class DAL
     {
-        private static string connectionString = "Data Source=CS-LegionY720;Initial Catalog=LU_SYSA14_2020_PartOne_DB;Integrated Security=True;Pooling=False"; 
+        private static string connectionString = "Data Source=CS-LEGIONY720;Initial Catalog=LU_SYSA14_2020_PartOne_DB;Integrated Security=True";
+            //"Data Source=CS-LegionY720;Initial Catalog=LU_SYSA14_2020_PartOne_DB;Integrated Security=True;Pooling=False"; 
 
         // Check/Exists-methods 
 
@@ -619,7 +620,7 @@ namespace LU_SYSA14_2020_PartOne.Models
                             tempTable.Rows.Add(new string[] { tempOne, tempTwo, tempThree, tempFour });
                         }
                     }
-                  //  connection.Close();
+                    connection.Close();
                 }
             }
             catch (SqlException)

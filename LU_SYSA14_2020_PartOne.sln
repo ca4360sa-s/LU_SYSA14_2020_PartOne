@@ -4,6 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LU_SYSA14_2020_PartOne", "LU_SYSA14_2020_PartOne.csproj", "{74C99849-C2EA-4391-B8A9-153A5073B62C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FA1BD2C-4A5F-4969-8F17-E7B9F85D9799} = {9FA1BD2C-4A5F-4969-8F17-E7B9F85D9799}
+		{265F5E91-EF1C-4E63-95B8-3DFF01F88226} = {265F5E91-EF1C-4E63-95B8-3DFF01F88226}
+		{34D982C4-5F84-476F-A3EC-676ED0125366} = {34D982C4-5F84-476F-A3EC-676ED0125366}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LU_SYSA14_2020_PartOne_IntegrationTechnologies_WebApplication", "..\LU_SYSA14_2020_PartOne_IntegrationTechnologies_WebApplication\LU_SYSA14_2020_PartOne_IntegrationTechnologies_WebApplication.csproj", "{34D982C4-5F84-476F-A3EC-676ED0125366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LU_SYSA14_2020_IntegrationTechnologies_WSOne_Console", "..\LU_SYSA14_2020_IntegrationTechnologies_WSOne_Console\LU_SYSA14_2020_IntegrationTechnologies_WSOne_Console.csproj", "{277E9DBA-8745-45AA-9CA1-E6E0C48FD493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LU_SYSA14_2020_IntegrationTechnologies_WSTwo_Console", "..\LU_SYSA14_2020_IntegrationTechnologies_WSTwo_Console\LU_SYSA14_2020_IntegrationTechnologies_WSTwo_Console.csproj", "{7A38B0BB-FFBB-44C5-8AE3-3F1284BFFBF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LU_SYSA14_2020_PartOne_IntegrationAndConfiguration_WebApplication", "..\LU_SYSA14_2020_IntegrationAndConfiguration_WebApplication\LU_SYSA14_2020_PartOne_IntegrationAndConfiguration_WebApplication.csproj", "{9FA1BD2C-4A5F-4969-8F17-E7B9F85D9799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LU_SYSA14_2020_PartOne_IntegrationAndConfiguration_Two_WebApplication", "..\LU_SYSA14_2020_PartOne_IntegrationAndConfiguration_Two_WebApplication\LU_SYSA14_2020_PartOne_IntegrationAndConfiguration_Two_WebApplication.csproj", "{265F5E91-EF1C-4E63-95B8-3DFF01F88226}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +30,26 @@ Global
 		{74C99849-C2EA-4391-B8A9-153A5073B62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74C99849-C2EA-4391-B8A9-153A5073B62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74C99849-C2EA-4391-B8A9-153A5073B62C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D982C4-5F84-476F-A3EC-676ED0125366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D982C4-5F84-476F-A3EC-676ED0125366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D982C4-5F84-476F-A3EC-676ED0125366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D982C4-5F84-476F-A3EC-676ED0125366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277E9DBA-8745-45AA-9CA1-E6E0C48FD493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277E9DBA-8745-45AA-9CA1-E6E0C48FD493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277E9DBA-8745-45AA-9CA1-E6E0C48FD493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277E9DBA-8745-45AA-9CA1-E6E0C48FD493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A38B0BB-FFBB-44C5-8AE3-3F1284BFFBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A38B0BB-FFBB-44C5-8AE3-3F1284BFFBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A38B0BB-FFBB-44C5-8AE3-3F1284BFFBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A38B0BB-FFBB-44C5-8AE3-3F1284BFFBF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FA1BD2C-4A5F-4969-8F17-E7B9F85D9799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FA1BD2C-4A5F-4969-8F17-E7B9F85D9799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FA1BD2C-4A5F-4969-8F17-E7B9F85D9799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FA1BD2C-4A5F-4969-8F17-E7B9F85D9799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265F5E91-EF1C-4E63-95B8-3DFF01F88226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265F5E91-EF1C-4E63-95B8-3DFF01F88226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265F5E91-EF1C-4E63-95B8-3DFF01F88226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265F5E91-EF1C-4E63-95B8-3DFF01F88226}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
